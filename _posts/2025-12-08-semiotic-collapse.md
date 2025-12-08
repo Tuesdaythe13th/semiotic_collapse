@@ -75,8 +75,18 @@ Using `transformer_lens`, we traced the attention patterns of L1H0 across the sc
 
 Under the "Rot" condition, the Precursor Head decoupled from the local context, attending instead to static "sink tokens" (newlines and punctuation). The circuit physically failed to propagate the schema.
 
+<d-figure>
+  <iframe src="{{ '/assets/img/blog/l1h0_stability.html' | relative_url }}" frameborder='0' scrolling='no' height="500px" width="100%"></iframe>
+  <figcaption><strong>Figure 1:</strong> L1H0 Attention Stability. The precursor head's attention to the previous token (t-1) drops catastrophically under high-entropy conditions (Rot), from 0.84 to 0.13 mean attention weight.</figcaption>
+</d-figure>
+
 ### Causal Necessity
 Is L1H0 failure the *cause* or just a symptom? We performed a **Causal Patching** intervention. By surgically grafting the "healthy" L1H0 activation from the Control run into the Rot run, we recovered the correct output probability for the target token (`" France"`). This confirms necessity.
+
+<d-figure>
+  <iframe src="{{ '/assets/img/blog/causal_patching.html' | relative_url }}" frameborder='0' scrolling='no' height="500px" width="100%"></iframe>
+  <figcaption><strong>Figure 2:</strong> Causal Patching Experiment. Restoring the healthy L1H0 activation recovers the model's ability to predict the correct target token, demonstrating the causal role of this attention head in maintaining schema coherence.</figcaption>
+</d-figure>
 
 ---
 
