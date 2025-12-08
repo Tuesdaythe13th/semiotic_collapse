@@ -76,7 +76,7 @@ When the Shifter attends uniformly to the context (rather than strictly to $t-1$
 
 ## 3. The Counter-Point: Attention Sinks
 
-Conversely, "Glitch Tokens" and adversarial suffixes cause collapse through the opposite mechanism: **Attention Sinks** <d-cite key="rumbelow2023solidgold"></d-cite>.
+Conversely, "Glitch Tokens" and adversarial suffixes cause collapse through the opposite mechanism: **Attention Sinks** <d-cite key="xiao2023attention"></d-cite> <d-cite key="rumbelow2023solidgold"></d-cite>.
 
 Glitch tokens often possess embedding norms significantly larger than the training distribution average ($\|x_{\text{glitch}}\| \gg \mathbb{E}[\|x\|]$). In the attention calculation, these high-norm vectors generate extreme dot products, effectively "hijacking" the Softmax. The Shifter Circuit snaps 100% of its attention to the glitch token, ignoring the actual $t-1$ context.
 
@@ -109,7 +109,7 @@ Our internal benchmarks on Llama-3-70B indicate a non-linear relationship betwee
 | Amharic | Ge'ez | ~10.0x | Critical | Partial Uniformity |
 | Shan | Myanmar | ~15.0x | **Collapsed** | Total Uniformity ($D_{KL} \to 0$) |
 
-This creates a **structural bias**: Agents operating in high-$M_E$ languages are not just "less capable"; they are **mechanistically incapable** of sustaining the short-term memory required for tool use <d-cite key="ahia2023cost"></d-cite> <d-cite key="petrov2023tokenizers"></d-cite>.
+This creates a **structural bias**: Agents operating in high-$M_E$ languages are not just "less capable"; they are **mechanistically incapable** of sustaining the short-term memory required for tool use <d-cite key="ahia2023cost"></d-cite> <d-cite key="petrov2023tokenizers"></d-cite> <d-cite key="deng2024multilingual"></d-cite>.
 
 ---
 
@@ -133,15 +133,19 @@ We invite the broader research community to validate the "Shifter Circuit" hypot
 
 ## References
 
-<d-cite key="olsson2022context"></d-cite> Olsson, C., Elhage, N., Nanda, N., Joseph, N., Nova, N., Weeks, K., & Olah, C. (2022). In-context Learning and Induction Heads. *Transformer Circuits Thread*.
+<d-cite key="olsson2022context"></d-cite> Olsson, C., et al. (2022). In-context Learning and Induction Heads. *arXiv:2209.11895*.
 
-<d-cite key="ahia2023cost"></d-cite> Ahia, O., Kumar, S., Gholipour, H., et al. (2023). Do All Languages Cost the Same? Tokenization in the Era of Commercial Language Models. *arXiv preprint arXiv:2305.13707*.
+<d-cite key="elhage2021framework"></d-cite> Elhage, N., et al. (2021). A Mathematical Framework for Transformer Circuits. *Transformer Circuits Thread*.
+
+<d-cite key="ahia2023cost"></d-cite> Ahia, O., et al. (2023). Do All Languages Cost the Same? Tokenization in the Era of Commercial Language Models. *arXiv:2305.13707*.
+
+<d-cite key="petrov2023tokenizers"></d-cite> Petrov, A., et al. (2023). Language Model Tokenizers Introduce Unfairness Between Languages. *Proceedings of NeurIPS*.
 
 <d-cite key="rumbelow2023solidgold"></d-cite> Rumbelow, J., & Watkins, M. (2023). SolidGoldMagikarp: Plus, why you should be careful with the token 160. *SERI MATS Technical Report*.
 
-<d-cite key="elhage2021framework"></d-cite> Elhage, N., Nanda, N., Olsson, C., et al. (2021). A Mathematical Framework for Transformer Circuits. *Transformer Circuits Thread*.
+<d-cite key="xiao2023attention"></d-cite> Xiao, G., et al. (2023). Efficient Streaming Language Models with Attention Sinks. *arXiv:2309.17453*.
 
-<d-cite key="petrov2023tokenizers"></d-cite> Petrov, A., La Malfa, E., & Torr, P. (2023). Language Model Tokenizers Introduce Unfairness Between Languages. *Proceedings of NeurIPS 2023*.
+<d-cite key="deng2024multilingual"></d-cite> Deng, Y., et al. (2024). Multilingual Jailbreak Challenges in Large Language Models. *ICLR*.
 
 ---
 
