@@ -2,96 +2,146 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Tuesday (Claudia Ramirez)
+    - name: Email
+      value: tuesday@artifex.fun
+    - name: Scheduling
+      value: <a href="https://zcal.co/tuesday">zcal.co/tuesday</a>
+    - name: Portfolio
+      value: <a href="https://linktr.ee/tuesday">Linktree</a> | <a href="https://substack.com/@tuesday">Substack</a>
 
-- title: Education
+- title: Current Positions
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Founder, Director of Research & Principal Investigator
+      institution: ARTIFEX Labs
+      year: Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Leading the Frontier Lab on Post-AGI research, therapeutic interpretability, and Quantum Computational Social Science (QCSS)
+        - Architect of the "DSM for AI Systems" (SCAI risk, epistemic coercion)
+        - Developer of ARTIFEX multi-agent safety architecture (FORETELLS, ADA)
+    
+    - title: Technical Contributor & Working Group Co-Founder
+      institution: MLCommons
+      year: Present
       description:
-        - Description 1.
-        - Description 2.
+        - Co-Lead of Agentic AI & Security Working Groups
+        - Contributor to AI Risk & Reliability (AIRR)
+        - Architect of the Agentic Reliability Evaluation Standard (ARES)
+        - Developer of AILuminate v1.0 and Agentic Product Maturity Model
+    
+    - title: Technical Red Teamer & Safety Researcher
+      institution: Humane Intelligence (Volunteer)
+      year: Present
+      description:
+        - Specializing in multimodal red teaming and algorithmic bias audits
+        - Work cited in NIST AI 700-2 and UNESCO policy
+    
+    - title: Quantum Futures Research Contributor
+      institution: Open Compute Project (FTI)
+      year: Present
+      description:
+        - Focusing on secure-by-design quantum data center resilience
+        - Post-Quantum Cryptography (PQC) hardware integration
 
-- title: Experience
+- title: Research Pillars
+  type: nested_list
+  contents:
+    - title: Clinical AI Diagnostics & Psychometrics
+      items:
+        - Developing "Therapeutic Interpretability" framework to treat model behavior as clinical pathology
+        - Core Concepts - SCAI Risk (Seemingly Conscious AI), Epistemic Coercion, Dissociative Reasoning in LLMs
+        - Methodology - Cognitive-affective modeling and "DSM-style" diagnostic criteria for AI systems
+        - Application - American Emotional Infrastructure (AEI) — socio-technical resilience models and anti-addiction design
+    
+    - title: Agentic Systems & Reliability
+      items:
+        - Defining governance and safety standards for multi-agent swarms and autonomous systems
+        - Focus - Agentic maturity models, cascade failure analysis, statefulness evaluation
+        - Threat Modeling - Multi-agent penetration testing and protecting against "latent debt" in tool-using systems
+    
+    - title: Adversarial ML & Mechanistic Interpretability
+      items:
+        - Using circuit-level insights to constrain high-entropy model behaviors
+        - Attacks - Transformer exploit taxonomies (attention hijacking, representation poisoning)
+        - Defense - Safety through interpretability and hardware-rooted security for quantum-adjacent systems
+
+- title: Key Standards & Governance Contributions
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: MLCommons Agentic Reliability Evaluation Standard (ARES)
+      year: 2024-2025
+      description: Core contributor to industry-standard reliability metrics for agentic AI systems
+    
+    - title: NIST AI 700-2
+      year: 2024
+      description: Red-teaming work cited in the Trustworthy & Responsible AI pilot evaluation
+    
+    - title: ISO/IEC 42001
+      year: 2024
+      description: Informed by the "Resilience Gap" metric developed in the Security Jailbreak Benchmark
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2024-2025
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+        - Winner - Humane Intelligence Bias Bounty Challenge 4 (Accessibility / Advanced Data Track)
+        - Winner - Revontulet × Humane Intelligence Bias Bounty 2 (Advanced Computer Vision)
+        - Winner - UN ITU AI for Good "Future Leaders in Quantum" (QPIXL Advanced Challenge)
+        - Finalist - Stanford AIMI Symposium ("Beyond the Benchmark - Ethical AI Evaluation")
 
-- title: Academic Interests
+- title: Selected Publications & Preprints
+  type: time_table
+  contents:
+    - title: "Cascade: Human-in-the-Loop Shortcomings Can Increase the Risk of Failures in Recommender Systems"
+      year: 2025
+      description: 
+        - FAccTRec@RecSys 2025
+        - arXiv:2509.20099
+    
+    - title: "AILuminate v1.0: AI Risk & Reliability / Generative AI Safety Benchmark"
+      year: 2024
+      description:
+        - MLCommons
+        - arXiv:2404.03555
+    
+    - title: "Aspirational Game Play: Improving Patient Care, Mental Hygiene, and Bad Habits With AI-Powered Video Games"
+      year: 2024
+      description: ACM SIGGRAPH 2024 Frontiers
+
+- title: Datasets & Tools
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: MLCommons Security Jailbreak Benchmark v0.5
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Introduction of the Resilience Gap metric
+        - Industry-standard safety evaluation
+    
+    - title: Text-to-Image Safety Benchmark
       items:
-        - Description 1.
-        - Description 2.
+        - 800+ cross-cultural ground truth annotations for generative safety
+        - Socio-affective annotation manuals
+        - Cross-cultural, trauma-informed guides for high-risk AI deployment
 
-- title: Other Interests
-  type: list
+- title: Teaching & Service
+  type: nested_list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: Speaking Engagements
+      items:
+        - ACM SIGGRAPH 2024
+        - Stanford AIMI Symposium
+        - Society of Women Engineers
+    
+    - title: Community Leadership
+      items:
+        - Google Women Techmakers Ambassador
+        - Hackathon Mentor (APART Research, Berkeley RDI AgentX)
+    
+    - title: Professional Memberships
+      items:
+        - ACM (Association for Computing Machinery)
+        - AAAI (Association for the Advancement of Artificial Intelligence)
+        - IEEE (Institute of Electrical and Electronics Engineers)
+        - Cloud Security Alliance
+        - Content Authenticity Initiative
