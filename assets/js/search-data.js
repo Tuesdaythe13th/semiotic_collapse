@@ -72,15 +72,15 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-",
+            },{id: "post-the-shifter-circuit-failure-mechanistic-failures-in-agentic-systems-under-high-entropy-loads",
         
-          title: "",
+          title: "The Shifter Circuit Failure: Mechanistic Failures in Agentic Systems under High-Entropy Loads",
         
-        description: "",
+        description: "We demonstrate that Agent Collapse is not general reasoning degradation, but a specific mechanical failure of Previous Token Heads (Shifter Circuits). The Tokenization-Variance Hypothesis reveals how high token-per-semantic-unit ratios create structural brittleness in non-English agentic deployments.",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/2025-12-08-semiotic-collapse/";
+            window.location.href = "/blog/2025/semiotic-collapse/";
           
         },
       },{id: "post-a-post-with-plotly-js",
